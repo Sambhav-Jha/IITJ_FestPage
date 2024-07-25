@@ -15,10 +15,10 @@ function Navbar() {
 		<header>
 			<h3>LOGO</h3>
 			<nav ref={navRef}>
-				<a href="/#">Home</a>
-				<a href="/#">My work</a>
-				<a href="/#">Blog</a>
-				<a href="/#">About me</a>
+				<a href="/#">Fests</a>
+				<a href="/#">Pronite</a>
+				<a href="/#">About</a>
+				<a href="/#">Contact</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

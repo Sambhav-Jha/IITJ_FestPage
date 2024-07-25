@@ -6,24 +6,35 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Titillium Web", sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+body {
+    background: url('src/assets/1118893.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 
 :root {
-	--mainColor: #29335c;
+	--mainColor: #8e44bc;
 	--mainColorLight: #5767aa;
-	--secondaryColor: #db2b39;
-	--textColor: #eee;
+	--secondaryColor: #1ca691;
+	--textColor: #e4b940;
 }
 
 header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 80px;
+	height: 100px;
 	padding: 0 2rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
+    background: linear-gradient(to bottom, var(--mainColor), transparent);
 }
+
 
 nav a {
 	margin: 0 1rem;
