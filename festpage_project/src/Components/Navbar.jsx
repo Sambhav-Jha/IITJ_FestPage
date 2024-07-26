@@ -1,37 +1,30 @@
-import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import "../Styles/main.css";
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
-function Navbar() {
-	const navRef = useRef();
-
-	const showNavbar = () => {
-		navRef.current.classList.toggle(
-			"responsive_nav"
-		);
-	};
-
-	return (
-		<header>
-			<h3>LOGO</h3>
-			<nav ref={navRef}>
-				<a href="/#">Fests</a>
-				<a href="/#">Pronite</a>
-				<a href="/#">About</a>
-				<a href="/#">Contact</a>
-				<button
-					className="nav-btn nav-close-btn"
-					onClick={showNavbar}>
-					<FaTimes />
-				</button>
-			</nav>
-			<button
-				className="nav-btn"
-				onClick={showNavbar}>
-				<FaBars />
-			</button>
-		</header>
-	);
+export default function Navbar() {
+  return (
+    <nav className="nav">
+      <Link to="/" className="site-title">
+        IITJ Fest Website
+      </Link>
+      <ul>
+        <CustomLink to="/home">Home</CustomLink>
+        <CustomLink to="/fests">Fests</CustomLink>
+        <CustomLink to="/pronite">Pronite</CustomLink>
+        <CustomLink to="/about">About</CustomLink>
+      </ul>
+    </nav>
+  )
 }
 
-export default Navbar;
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+
+  return (
+    <li className={isActive ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
+  )
+}
