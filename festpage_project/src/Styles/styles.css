@@ -67,8 +67,6 @@ body {
 }
 
 .nav li.active {
-    background-color: #555;
-    border-radius: 10px;
     transform: rotateZ(3deg);
 }
 
@@ -124,4 +122,12 @@ img{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     color: hsl(0, 0%, 30%);
+}
+
+.IITJ-campus-image{
+    width:95%;
+}
+
+.home-div{
+    text-align: left;
 }

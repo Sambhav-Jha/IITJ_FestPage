@@ -6,6 +6,7 @@ function Card(props) {
       <p className="dev-name"><b>Name: {props.name}</b></p>
       <p>Age: {props.age}</p>
       <p>Batch: {props.batch}</p>
+      <p>Roll No.: {props.rollNo}</p>
     </div>
   );
 }
@@ -15,6 +16,7 @@ Card.propTypes = {
   age: PropTypes.number,
   batch: PropTypes.string,
   image: PropTypes.string.isRequired,
+  rollNo: PropTypes.string
 };
 
 Card.defaultProps = {
@@ -22,6 +24,7 @@ Card.defaultProps = {
   age: 19,
   batch: "B23",
   image: "",
+  rollNo: "Bxxxxxxxx"
 };
 
 export default Card;

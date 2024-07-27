@@ -1,6 +1,6 @@
 import FestCard from "../Components/FestCard";
 import IgnusLogo from "../assets/Ignus.png";
-import PrometeoLogo from "../assets/Prometeo.jpg";
+import PrometeoLogo from "../assets/Prometeo.png";
 import VarchasLogo from "../assets/Varchas.jpg";
 
 export default function Fests() {
