@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 1rem;
+    text-align: center;
+}
+
+.nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.site-title {
+    position: relative;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.site-title::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    /* You can adjust the height of the underline here */
+    display: block;
+    margin-top: 4px;
+    /* Space between text and underline */
+    bottom: 1px;
+    right: 0;
+    background: #ffffff;
+    /* Underline color */
+    transition: width 0.5s ease;
+    /* Duration and timing function of the transition */
+}
+
+.site-title:hover::after {
+    width: 100%;
+    left: 0;
+    background: #ffffff;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.nav a {
+    color: inherit;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+}
+
+.nav li.active {
+    transform: rotateZ(3deg);
+}
+
+.nav li:hover {
+    transition: 0.5s;
+    border-radius: 10px;
+    transform: rotateZ(3deg);
+}
+
+.card {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    border: 1px solid hsla(0, 0%, 50%, 0.8);
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 250px;
+    display: inline-block;
+}
+
+img {
+    width: 150px;
+}
+
+.fest-card {
+    border: 1px solid hsl(0, 0, 80%);
+    background-color: hsl(32, 33%, 90%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 250px;
+    display: inline-block;
+}
+
+.fest-card:hover {
+    scale: 1.05;
+    background-color: hsl(33, 59%, 78%);
+    transition: 0.5s;
+}
+
+.fest-card .fest-card-image {
+    max-width: 60%;
+    height: auto;
+    border-radius: 40%;
+    margin-bottom: 10px;
+}
+
+.card .dev-name {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: hsl(0, 0%, 30%);
+}
+
+.IITJ-campus-image {
+    width: 95%;
+}
+
+.home-div {
+    text-align: left;
+}
+
+@media (max-width: 414px) {
+    .site-title {
+        font-size:1rem ;
+    }
+}
+
+@media (max-width: 387px) {
+    #hm {
+        font-size: small;
+    }
+    #f {
+        font-size: small;
+    }
+    #pr {
+        font-size: small;
+    }
+    #ab {
+        font-size: small;
+    }
+    
+}
