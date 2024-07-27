@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:wght@400;600&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: mukta;
 }
 
 body {
@@ -22,12 +25,19 @@ body {
 }
 
 .site-title {
-    position: relative;
     font-size: 2rem;
+}
+
+.link {
+    font-size: 1rem;
+}
+
+.site-title, .link {
+    position: relative;
     text-decoration: none;
 }
 
-.site-title::after {
+.site-title::after, .link::after {
     content: "";
     position: absolute;
     width: 0;
@@ -37,14 +47,14 @@ body {
     margin-top: 4px;
     /* Space between text and underline */
     bottom: 1px;
-    right: 0;
+    /* right: 0; */
     background: #ffffff;
     /* Underline color */
     transition: width 0.5s ease;
     /* Duration and timing function of the transition */
 }
 
-.site-title:hover::after {
+.site-title:hover::after, .link:hover::after {
     width: 100%;
     left: 0;
     background: #ffffff;
@@ -70,14 +80,10 @@ body {
     padding: .25rem;
 }
 
-.nav li.active {
-    transform: rotateZ(3deg);
-}
-
 .nav li:hover {
     transition: 0.5s;
     border-radius: 10px;
-    transform: rotateZ(3deg);
+    
 }
 
 .card {
@@ -119,7 +125,7 @@ img {
 .fest-card .fest-card-image {
     max-width: 60%;
     height: auto;
-    border-radius: 40%;
+    border-radius: 50%;
     margin-bottom: 10px;
 }
 
@@ -157,4 +163,8 @@ img {
         font-size: small;
     }
     
+}
+
+.fnp {
+    color: black;
 }

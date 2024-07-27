@@ -1,10 +1,11 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import IITJ_logo from "../assets/IITJ_logo.png"
 
 export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/home" className="site-title">
-        IITJ Fest Website
+        <img src={IITJ_logo} alt="IITJ-LOGO" style={{width: '50px', borderRadius: '10%'}}></img> 
       </Link>
       <ul>
         <CustomLink className="link" to="/home" id = "hm">Home</CustomLink>
