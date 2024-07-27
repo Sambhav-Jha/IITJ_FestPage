@@ -31,13 +31,17 @@ body {
     content: "";
     position: absolute;
     width: 0;
-    height: 2px; /* You can adjust the height of the underline here */
+    height: 2px;
+    /* You can adjust the height of the underline here */
     display: block;
-    margin-top: 4px; /* Space between text and underline */
+    margin-top: 4px;
+    /* Space between text and underline */
     bottom: 1px;
     right: 0;
-    background: #ffffff; /* Underline color */
-    transition: width 0.5s ease; /* Duration and timing function of the transition */
+    background: #ffffff;
+    /* Underline color */
+    transition: width 0.5s ease;
+    /* Duration and timing function of the transition */
 }
 
 .site-title:hover::after {
@@ -54,7 +58,7 @@ body {
     gap: 1rem;
 }
 
-.link{
+.link {
     text-decoration: none;
 }
 
@@ -76,11 +80,11 @@ body {
     transform: rotateZ(3deg);
 }
 
-.card{
+.card {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     border: 1px solid hsla(0, 0%, 50%, 0.8);
-    
+
     border-radius: 10px;
     box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
     padding: 20px;
@@ -90,10 +94,11 @@ body {
     display: inline-block;
 }
 
-img{
+img {
     width: 150px;
 }
-.fest-card{
+
+.fest-card {
     border: 1px solid hsl(0, 0, 80%);
     background-color: hsl(32, 33%, 90%);
     border-radius: 10px;
@@ -105,29 +110,51 @@ img{
     display: inline-block;
 }
 
-.fest-card:hover{
+.fest-card:hover {
     scale: 1.05;
     background-color: hsl(33, 59%, 78%);
     transition: 0.5s;
 }
 
-.fest-card .fest-card-image{
+.fest-card .fest-card-image {
     max-width: 60%;
     height: auto;
     border-radius: 40%;
     margin-bottom: 10px;
 }
 
-.card .dev-name{
+.card .dev-name {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     color: hsl(0, 0%, 30%);
 }
 
-.IITJ-campus-image{
-    width:95%;
+.IITJ-campus-image {
+    width: 95%;
 }
 
-.home-div{
+.home-div {
     text-align: left;
+}
+
+@media (max-width: 414px) {
+    .site-title {
+        font-size:1rem ;
+    }
+}
+
+@media (max-width: 387px) {
+    #hm {
+        font-size: small;
+    }
+    #f {
+        font-size: small;
+    }
+    #pr {
+        font-size: small;
+    }
+    #ab {
+        font-size: small;
+    }
+    
 }
