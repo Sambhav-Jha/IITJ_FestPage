@@ -22,7 +22,28 @@ body {
 }
 
 .site-title {
+    position: relative;
     font-size: 2rem;
+    text-decoration: none;
+}
+
+.site-title::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* You can adjust the height of the underline here */
+    display: block;
+    margin-top: 4px; /* Space between text and underline */
+    bottom: 1px;
+    right: 0;
+    background: #ffffff; /* Underline color */
+    transition: width 0.5s ease; /* Duration and timing function of the transition */
+}
+
+.site-title:hover::after {
+    width: 100%;
+    left: 0;
+    background: #ffffff;
 }
 
 .nav ul {
@@ -33,9 +54,12 @@ body {
     gap: 1rem;
 }
 
+.link{
+    text-decoration: none;
+}
+
 .nav a {
     color: inherit;
-    text-decoration: none;
     height: 100%;
     display: flex;
     align-items: center;
@@ -44,14 +68,21 @@ body {
 
 .nav li.active {
     background-color: #555;
+    border-radius: 10px;
+    transform: rotateZ(3deg);
 }
 
 .nav li:hover {
-    background-color: #777;
+    transition: 0.5s;
+    border-radius: 10px;
+    transform: rotateZ(3deg);
 }
 
 .card{
-    border: 1px solid hsl(0, 0, 80%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    border: 1px solid hsla(0, 0%, 50%, 0.8);
+    
     border-radius: 10px;
     box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
     padding: 20px;
@@ -61,10 +92,31 @@ body {
     display: inline-block;
 }
 
-.card .card-image{
+img{
+    width: 150px;
+}
+.fest-card{
+    border: 1px solid hsl(0, 0, 80%);
+    background-color: hsl(32, 33%, 90%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 250px;
+    display: inline-block;
+}
+
+.fest-card:hover{
+    scale: 1.05;
+    background-color: hsl(33, 59%, 78%);
+    transition: 0.5s;
+}
+
+.fest-card .fest-card-image{
     max-width: 60%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 40%;
     margin-bottom: 10px;
 }
 

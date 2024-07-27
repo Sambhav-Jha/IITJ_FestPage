@@ -7,10 +7,10 @@ export default function Navbar() {
         IITJ Fest Website
       </Link>
       <ul>
-        <CustomLink to="/home">Home</CustomLink>
-        <CustomLink to="/fests">Fests</CustomLink>
-        <CustomLink to="/pronite">Pronite</CustomLink>
-        <CustomLink to="/about">About</CustomLink>
+        <CustomLink className="link" to="/home">Home</CustomLink>
+        <CustomLink className="link" to="/fests">Fests</CustomLink>
+        <CustomLink className="link" to="/pronite">Pronite</CustomLink>
+        <CustomLink className="link" to="/about">About</CustomLink>
       </ul>
     </nav>
   )
