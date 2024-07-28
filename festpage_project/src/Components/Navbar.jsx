@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/home" className="site-title">
-        <img src={IITJ_logo} alt="IITJ-LOGO" style={{width: '50px', borderRadius: '10%'}}></img> 
+        <img src={IITJ_logo} alt="IITJ-LOGO" style={{width: '50px', borderRadius: '20%'}}></img> 
       </Link>
       <ul>
         <CustomLink className="link" to="/home" id = "hm">Home</CustomLink>

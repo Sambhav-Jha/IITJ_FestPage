@@ -168,3 +168,11 @@ img {
 .fnp {
     color: black;
 }
+
+.Social{
+    align-items: end;
+}
+
+a{
+    text-decoration: none;
+}
